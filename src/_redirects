@@ -1,0 +1,15 @@
+# Redirects from what the browser requests to what we serve
+
+/cars                /cars  301
+/aboutus             /aboutus  301
+/contactus           /contactus  301
+/admin               /admin  301
+/admin/add-cars.php  /admin/add-cars  301
+/admin/booklist      /admin/booklist  301
+/admin/edithomeimage /admin/edithomeimage  301
+/booknow             /booknow  301
+/vehicle             /vehicle  301
+/services            /services  301
+
+# Redirect specific author page
+/authors/c%C3%A9line /authors/about-c%C3%A9line  301
