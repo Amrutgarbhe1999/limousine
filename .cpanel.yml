@@ -1,0 +1,7 @@
+cpanel:
+  application: "limousine"
+  username: "demonerdtech"
+  app_root: "/home/demonerdtech/public_html/limousine/"
+  build:
+    commands:
+      - echo "Build commands"
