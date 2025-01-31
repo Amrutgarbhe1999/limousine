@@ -98,18 +98,16 @@ const BookingForm = () => {
     <div className="formSection">
       <div className="row">
         <div className="col-md-6 form-content" data-aos="fade-right">
-          <h5 data-aos="fade-up">best rental cab</h5>
+          <h5 data-aos="fade-up" style={{color:"#a67c45"}}>best rental cab</h5>
           <h1 data-aos="fade-down">Book your cab</h1>
           <p>
           Experience Chicago in unparalleled style and comfort with Hi88Limo, your premier destination for luxurious limousine services. Whether you’re seeking a grand entrance for a special occasion, a stress-free ride to the airport
           </p>
           <div className="row formcont" >
-            <div className="col-md-2" style={{display:"flex",justifyContent:"center",alignItems:"center "}}>
-            <i class="fa-solid fa-headset" style={{color:"#c37209;"}}></i>
-            </div>
+           
             <div className="col-md-4" style={{lineHeight:"9px"}}>
-            <p>Phone: 0123 458 789 </p>
-            <p>Email: rj@gmail.com </p>
+            <p><i style={{fontSize:"15px",color:"#a67c45"}} class="fa-solid fa-phone"></i> : 0123 458 789 </p>
+            <p><i style={{fontSize:"15px",color:"#a67c45"}} class="fa-solid fa-envelope"></i> : rj@gmail.com </p>
             </div>
           </div>
         </div>

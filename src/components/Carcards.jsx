@@ -21,14 +21,14 @@ function Carcards() {
     <div className="carContainer">
       <div className="row container carbox">
         {cars.map((car, index) => (
-          <div key={index} className="col-md-2 carscontent" data-aos="fade-up"
-          data-aos-duration="2000">
+          <div key={index} className="col-md-2 carscontent" data-aos="fade-up" data-aos-duration="2000">
             <img
               className="carimage"
               src={`https://demo.nerdtech.in/limousine/${car.car_img}`}
-              alt={car.id || "Car image"} 
+              alt={car.id || "Car image"}
             />
-            <p>{car.content || "Car content"}</p>
+            <h5>{car.content || "Car content"}</h5>
+            <p>{car.passenger || "Car passenger"} Passengers</p> {/* Updated to use car.passenger */}
           </div>
         ))}
       </div>

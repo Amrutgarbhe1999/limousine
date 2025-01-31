@@ -48,7 +48,7 @@ h1{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 34px;
+  padding: 100px;
   text-align:left ;
   /* align-items: center ; */
 }
@@ -93,6 +93,12 @@ h1{
 
 /* Responsive Styling */
 @media (max-width: 768px) {
+  .form-content{
+ 
+    padding: 50px;
+    
+    /* align-items: center ; */
+  }
 
 .formcont{
   margin: auto;
@@ -181,6 +187,12 @@ h1{
 }
 .carContainer{
   background-color: #e2e2e2;
+}
+.service-content p{
+  margin-top: 3rem;
+}
+.card-title{
+  font-weight: 600!important;
 }
 
 /* Responsive adjustments */
@@ -273,6 +285,9 @@ h1{
   .serviceCard{
     margin-bottom: 3rem;
   }
+  .serviceCard h4{
+    font-weight: bold;
+  }
   .right-img img {
     width: 100%!important;
 }
@@ -287,7 +302,7 @@ h1{
   .bookbtn {
     width: 46%!important;
     margin-bottom: 3rem!important;
-    background-color: rgb(143, 106, 38);
+    background-color: rgb(199 154 71);
     color: #fff;
     margin: auto;
 }
@@ -340,7 +355,7 @@ h1{
   margin: auto;
   padding: 23px;
 }
-.carscontent p{
+.carscontent h5{
   margin-top: 1rem;
 }
 .carbox{
@@ -417,6 +432,16 @@ th, td {
   align-items: center;
   margin: auto;
 }
+.accordion-button{
+  color: black!important;
+  border: none;
+  background: #fff!important;
+  border-bottom: 1px solid #ebebeb;
+}
+.accordion-item{
+  border: none;
+  /* border-bottom: 1px solid gray; */
+}
 @media (max-width: 767px) {
   .table th, .table td {
     font-size: 14px;
@@ -429,7 +454,7 @@ th, td {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
  margin: auto;
 }
 .middlecontent h2{
@@ -437,8 +462,9 @@ th, td {
 }
 .points{
   display: flex;
-  line-height: 26px;
-  gap: 10px;
+      line-height: 26px;
+      width: 70%;
+      gap: 10px;
 }
 .middlesection{
   background-color: #321507;
@@ -446,14 +472,14 @@ th, td {
   color: #fff;
 }
 .pointsicon i{
-  color: rgb(143, 106, 38);
+  color: rgb(199 154 71);
 }
 .pointsContent h5{
   font-size: 16px;
 }
 .bookbtn{
   width: 20%;
-  background-color: rgb(143, 106, 38);
+  background-color: rgb(199 154 71);
   color: #fff;
 }
 .right-img img{
@@ -484,6 +510,10 @@ th, td {
   align-items: center;
   text-align: center;
   margin: auto;
+}
+.choosecard h4{
+  margin-top: 1rem;
+  font-size: 20px;
 }
 
 .choose-icon i{

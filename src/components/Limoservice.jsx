@@ -7,7 +7,7 @@ function Limoservice() {
       <div className="container">
         <div className="row">
           <div className="col-md-8 service-content" data-aos="fade-down-left">
-            <h3>LIMO SERVICE</h3>
+            <h3 style={{fontWeight:"bold"}}>LIMO SERVICE</h3>
             <p>
               Hi88Limo goes beyond ordinary car services, offering a variety of
               limousine options to elevate any event. Whether you require a
@@ -24,6 +24,7 @@ function Limoservice() {
         </div>
         <br />
         <hr />
+        <br />
         <div className="row my-5">
           <div
             className="col-md-3"
@@ -32,9 +33,12 @@ function Limoservice() {
             data-aos-duration="2000"
           >
             <div className="serviceCard">
-              <h4>Concerts</h4>
+              <h4 style={{fontWeight:"bold"}}>Concerts</h4>
               <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer typesetting industry
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer typesetting
+                industry
               </p>
             </div>
           </div>
@@ -45,7 +49,7 @@ function Limoservice() {
             data-aos-duration="2000"
           >
             <div className="serviceCard">
-              <h4>Grand Enterance</h4>
+              <h4 style={{fontWeight:"bold"}}>Grand Enterance</h4>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
                 consequatur in quasi mollitia, laborum commodi omnis nulla ipsa
@@ -60,9 +64,12 @@ function Limoservice() {
             data-aos-duration="2000"
           >
             <div className="serviceCard">
-              <h4>GLuxury Locations</h4>
+              <h4 style={{fontWeight:"bold"}}>GLuxury Locations</h4>
               <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer typesetting industry
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer typesetting
+                industry
               </p>
             </div>
           </div>
@@ -73,7 +80,7 @@ function Limoservice() {
             data-aos-duration="2000"
           >
             <div className="serviceCard">
-              <h4>Grand Enterance</h4>
+              <h4 style={{fontWeight:"bold"}}>Grand Enterance</h4>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
                 consequatur in quasi mollitia, laborum commodi omnis nulla ipsa

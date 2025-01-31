@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import homepageimage1 from "../assests/images/homepageimage1.png"
 // import "@fortawesome/fontawesome-free/css/all.min.css";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -57,7 +58,7 @@ function MiddleContent() {
           </div>
           <div className="col-md-6 middleimage">
             <img
-              src="https://images.pexels.com/photos/4083523/pexels-photo-4083523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src={homepageimage1}
               alt="Luxury Limousine" data-aos="flip-right"
             />
           </div>

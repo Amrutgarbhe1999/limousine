@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import '../admin.css';
 
-
 function Addcars() {
   const [isSidebarVisible, setSidebarVisible] = useState(true);
   const [formData, setFormData] = useState({
     car_img: null,
-    content: ''
+    content: '',
+    passenger: '' // Added passenger field here
   });
 
   const toggleSidebar = () => {
@@ -50,6 +50,13 @@ function Addcars() {
     const form = new FormData();
     form.append('car_img', formData.car_img);
     form.append('content', formData.content);
+    form.append('passenger', formData.passenger); // Append the passenger field here
+
+    console.log("Form Data: ", {
+      car_img: formData.car_img,
+      content: formData.content,
+      passenger: formData.passenger
+    });
 
     // Send form data to PHP backend
     fetch('https://demo.nerdtech.in/limousine/backend/cars.php', {
@@ -63,7 +70,7 @@ function Addcars() {
       })
       .catch(error => {
         console.error('Error:', error); // Handle error response
-        alert('There was an error adding the car.');
+        alert(`There was an error adding the car: ${error.message}`);
       });
   };
 
@@ -121,6 +128,21 @@ function Addcars() {
                       rows="4"
                       required
                     ></textarea>
+                  </div>
+                </div>
+
+                <div className="col-md-4">
+                  <div className="form-group car-form-group">
+                    <label htmlFor="passenger" className="font-weight-bold">No of Passenger:</label>
+                    <input
+                      id="passenger"
+                      name="passenger"
+                      value={formData.passenger}
+                      onChange={handleChange}
+                      className="form-control"
+                      required
+                      type="text"
+                    />
                   </div>
                 </div>
               </div>

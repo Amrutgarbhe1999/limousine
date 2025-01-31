@@ -83,15 +83,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Sanitize and validate form data
     $content = isset($_POST['content']) ? $conn->real_escape_string($_POST['content']) : null;
+    $passenger = isset($_POST['passenger']) ? $conn->real_escape_string($_POST['passenger']) : null;
 
-    if (!$content) {
-        echo json_encode(["status" => "error", "message" => "Content is required."]);
+    // Debugging: Log the incoming values
+    error_log("Content: " . $content);
+    error_log("passenger: " . $passenger);
+
+    if (!$content || !$passenger) {
+        echo json_encode(["status" => "error", "message" => "Content and passenger fields are required."]);
         exit;
     }
 
     // Use prepared statements for the database query
-    $stmt = $conn->prepare("INSERT INTO cars (car_img, content) VALUES (?, ?)");
-    $stmt->bind_param("ss", $car_img, $content);
+    $stmt = $conn->prepare("INSERT INTO cars (car_img, content, passenger) VALUES (?, ?, ?)");
+    $stmt->bind_param("sss", $car_img, $content, $passenger);
 
     if ($stmt->execute()) {
         echo json_encode(["status" => "success", "message" => "Car added successfully!"]);

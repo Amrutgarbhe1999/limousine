@@ -3,9 +3,11 @@ import React from "react";
 function Faq() {
   return (
     <>
-      {" "}
-      <center>
-        <h1>FAQ</h1>
+      
+      <center className="my-5">
+        <h1 data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" >FAQ</h1>
       </center>
       <div className="container col-md-8" data-aos="zoom-out-down">
         <div className="accordion" id="accordionExample">
@@ -19,7 +21,7 @@ function Faq() {
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                Accordion Item #1
+                What types of vehicles do you offer?
               </button>
             </h2>
             <div
@@ -29,15 +31,7 @@ function Faq() {
               data-bs-parent="#accordionExample"
             >
               <div className="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is
-                shown by default, until the collapse plugin adds the appropriate
-                classes that we use to style each element. These classes control
-                the overall appearance, as well as the showing and hiding via
-                CSS transitions. You can modify any of this with custom CSS or
-                overriding our default variables. It's also worth noting that
-                just about any HTML can go within the{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ut sapiente eos quasi, quibusdam tenetur suscipit repellat voluptates? Minima illo eveniet quibusdam veritatis. Mollitia unde itaque odio consequuntur at eligendi aliquam omnis, soluta nemo totam enim iste autem iusto tenetur tempora maiores quo, necessitatibus ratione officiis, tempore cumque eum cupiditate? Iure excepturi architecto veritatis perspiciatis.
               </div>
             </div>
           </div>
@@ -51,7 +45,7 @@ function Faq() {
                 aria-expanded="false"
                 aria-controls="collapseTwo"
               >
-                Accordion Item #2
+                Do your prices include gratuity, taxes, and fees?
               </button>
             </h2>
             <div
@@ -61,15 +55,7 @@ function Faq() {
               data-bs-parent="#accordionExample"
             >
               <div className="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non corporis explicabo vel aliquid totam fugiat pariatur maiores sunt ipsum, veritatis quam atque harum recusandae aliquam repellat accusamus maxime, cupiditate eveniet ex porro repellendus rerum optio provident. Natus voluptatem eius debitis, pariatur deleniti iusto nam.
               </div>
             </div>
           </div>
@@ -83,7 +69,7 @@ function Faq() {
                 aria-expanded="false"
                 aria-controls="collapseThree"
               >
-                Accordion Item #3
+                How far in advance should I book?
               </button>
             </h2>
             <div
@@ -93,15 +79,12 @@ function Faq() {
               data-bs-parent="#accordionExample"
             >
               <div className="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+                velit earum a error hic cumque natus nam eius animi commodi esse
+                iusto quisquam quos rem ipsam! Veritatis minima expedita,
+                tempore magni inventore consequatur? Ducimus cum sequi quis aut,
+                iusto rerum earum omnis nostrum magni quaerat unde deserunt
+                placeat, inventore a possimus fugiat nesciunt facere dicta?
               </div>
             </div>
           </div>
